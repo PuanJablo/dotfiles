@@ -35,6 +35,7 @@ return {
         ["<CR>"] = cmp.mapping.confirm({ select = false }) 
       }),
       sources = cmp.config.sources({
+        { name = "nvim_lsp" }, -- lsp suggestions
         { name = "luasnip" }, -- snippets
         { name ="buffer" }, -- text within current buffer
         { name = "path" }, -- file system paths
