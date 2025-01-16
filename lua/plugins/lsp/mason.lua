@@ -24,18 +24,10 @@ return {
     mason_lspconfig.setup({
       -- list of servers for mason to install
       ensure_installed = {
-        "tsserver",
-        "html",
-        "cssls",
-        "tailwindcss",
-        "svelte",
+        "markdown_oxide",
         "lua_ls",
-        "graphql",
-        "emmet_ls",
-        "prismals",
-        "pyright",
-        "codelldb",
-        "rust-analyzer"
+        "clangd",
+        "rust_analyzer"
       },
 
       -- auto-install configured servers (with lspconfig)
