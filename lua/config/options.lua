@@ -16,13 +16,13 @@ opt.wrap = false
 -- search settings
 opt.ignorecase = true
 opt.smartcase = true
- 
+
 -- cursor line
-opt.cursorline = true 
+opt.cursorline = true
 
 -- appearance
 opt.termguicolors = true
-opt.background = "dark" 
+opt.background = "dark"
 opt.signcolumn = "yes"
 
 -- backspace
