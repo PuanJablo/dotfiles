@@ -1,0 +1,87 @@
+format = """
+$directory\
+$fill\
+$git_status\
+$line_break\
+$git_branch\
+$lua\
+$nodejs\
+$rust\
+$golang\
+$php\
+$line_break\
+$time\
+$cmd_duration\
+$line_break\
+$character"""
+
+palette = "e3cyberpunk"
+
+[palettes.e3cyberpunk]
+black = '#0A111C'
+red = '#EA2743'
+white = '#EBEBEB'
+green = '#33C871'
+cyan = '#29FFF4'
+gold = '#E6B650'
+grey = '#C9DADE'
+
+
+[fill]
+symbol = ' '
+
+[directory]
+style = 'bold fg:black bg:red'
+format = "[ $path ]($style)"
+truncation_length = 1
+truncation_symbol = ""
+
+[character]
+success_symbol = '[成功](white)'
+error_symbol = '[失敗](white)'
+
+[cmd_duration]
+min_time = 500
+style = "fg:green"
+format = '[ $duration ]($style)'
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+[git_branch]
+symbol = ""
+style = "fg:white"
+format = '[\[$symbol $branch\]]($style)'
+
+[git_status]
+style = "fg:gold"
+format = '[($all_status$ahead_behind)]($style)'
+
+[nodejs]
+symbol = "ノード"
+style = "fg:grey"
+format = '[ $symbol ($version) ]($style)'
+
+[rust]
+symbol = "サビ"
+style = "fg:grey"
+format = '[ $symbol ($version) ]($style)'
+
+[golang]
+symbol = "行くラング"
+style = "fg:grey"
+format = '[ $symbol ($version) ]($style)'
+
+[lua]
+symbol = "ルア"
+style = "fg:grey"
+format = '[ $symbol ($version) ]($style)'
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "fg:green"
+format = '[\[$time\]]($style)'
