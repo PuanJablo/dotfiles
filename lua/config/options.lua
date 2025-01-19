@@ -35,4 +35,4 @@ opt.clipboard:append("unnamedplus")
  opt.splitright = true
  opt.splitbelow = true
 
- opt.iskeyword:append("_")
+ opt.iskeyword:append("-")
