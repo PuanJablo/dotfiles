@@ -9,7 +9,7 @@ return {
           gitsigns.setup()
     
           keymap.set("n", "<leader>gp", ":Gitsigns preview_hunk<CR>", {})
-          keymap.set("n", "<leader>gb", ":Gitsings toggle_current_line_blame<CR>", {})
+          keymap.set("n", "<leader>gb", ":Gitsigns toggle_current_line_blame<CR>", {})
       end
   },
   {
