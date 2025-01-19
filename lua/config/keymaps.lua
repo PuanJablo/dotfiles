@@ -1,4 +1,4 @@
-vim.g.mapleader = " "
+=vim.g.mapleader = " "
 
 local keymap = vim.keymap -- for conciseness
  
@@ -26,5 +26,5 @@ keymap.set("n", "<leader>tp", ":tabp<CR>") -- go to previous tab
 keymap.set("n", "<leader>sm", "MaximizerToggle<CR>")
 
 -- nvim-tree
-keymap.set("n", "<leader>f", ":NvimTreeToggle<CR")
+keymap.set("n", "<C-n>", ":NvimTreeToggle<CR")
  

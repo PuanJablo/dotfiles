@@ -40,8 +40,8 @@ return {
       opts.desc = "Smart rename"
       keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts) -- smart rename
 
-      opts.desc = "Show buffer diagnostics"
-      keymap.set("n", "<leader>d", vim.diagnostic.open_flat, opts) -- show diagnostics for line
+      -- opts.desc = "Show buffer diagnostics"
+      -- keymap.set("n", "<leader>d", vim.diagnostic.open_flat, opts) -- show diagnostics for line
 
       opts.desc = "Go to previous diagnostic"
       keymap.set("n", "[d", vim.diagnostic.goto_prev, opts) -- jump to next diagnostic in buffer
@@ -60,14 +60,13 @@ return {
     local capabilities = cmp_nvim_lsp.default_capabilities()
 
     -- Change the Diagnosic symbols in the sign column (gutter)
-    -- (not in youtube nvim video)
     local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
     for type, icon in pairs(signs) do
       local hl = "DiagnosticSign" .. type
       vim.fn.sign_define(hl, {text = icon, texthl = hl, numhl = ""})
     end
 
-    -- Add ont here when you want to add more LSPs in the future 
+    -- Add on here when you want to add more LSPs in the future 
 
     -- Markdown LSP
     lspconfig["markdown_oxide"].setup({
@@ -85,6 +84,18 @@ return {
     lspconfig["rust_analyzer"].setup({
       capabilities = capabilities,
       on_attach = on_attach, 
+    })
+
+    -- go language server
+    lspconfig["gopls"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+
+    -- bash language server
+    lspconfig["bashls"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
     })
 
     -- lua language server

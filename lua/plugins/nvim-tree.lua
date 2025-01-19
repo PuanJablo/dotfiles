@@ -6,7 +6,7 @@ return {
     vim.g.loaded = 1
     vimg.g.loaded_newtrwPlugin = 1
 
-    vim.cmd([[ highlight NvimTreeIndentMarker guifg=#3FC5FF ]])
+    vim.cmd([[ highlight NvimTreeIndentMarker guifg=#EA2743 ]])
 
     nvimtree.setup({
       renderer = {

@@ -7,7 +7,7 @@ return {
       "L3MON4D3/LuaSnip", -- snippet engine
       "saadparwaiz1/cmp_luasnip", -- for autocompletion
       "rafamadriz/friendly-snippets",
-      'brenoprata10/nvim-highlight-colors'
+      'brenoprata10/nvim-highlight-colors' -- highlightin for colours
   },
   config = function()
     local cmp = require("cmp")
@@ -35,7 +35,7 @@ return {
         ["<C-f>"] = cmp.mapping.scroll_docs(4),
         ["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
         ["<C-e>"] = cmp.mapping.abort(), -- close completion window
-        ["<CR>"] = cmp.mapping.confirm({ select = false }) 
+        ["<Tab>"] = cmp.mapping.confirm({ select = false })
       }),
       sources = cmp.config.sources({
         { name = "nvim_lsp" }, -- lsp suggestions
