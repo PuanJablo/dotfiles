@@ -6,6 +6,8 @@ return {
     vim.g.loaded = 1
     vimg.g.loaded_newtrwPlugin = 1
 
+    vim.cmd([[ highlight NvimTreeIndentMarker guifg=#3FC5FF ]])
+
     nvimtree.setup({
       renderer = {
        icons = {
@@ -16,6 +18,13 @@ return {
            },
          },
        },
+       actions = {
+        open_file = {
+          window_picker = {
+            enable = false,
+          },
+        },
+       }
       },
    })
   end
