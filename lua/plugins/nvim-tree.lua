@@ -1,20 +1,31 @@
 return {
-  "nvim-treesitter/nvim-treesitter",
-  build = ":TSUpdate",
+  "nvim-tree/nvim-tree.lua",
   config = function()
-    local configs = require("nvim-treesitter.configs")
+    local nvimtree = require("nvim-tree")
+    
+    vim.g.loaded = 1
+    vimg.g.loaded_newtrwPlugin = 1
 
-    configs.setup({
-      ensure_installed = {
-        "c",
-        "rust",
-        "lua",
-        "vim",
-        "vimdoc",
+    vim.cmd([[ highlight NvimTreeIndentMarker guifg=#3FC5FF ]])
+
+    nvimtree.setup({
+      renderer = {
+       icons = {
+         glyphs = {
+           folder = {
+            arrow_closed = "", -- arrow when folder is closed
+            arrow_open = "", -- arrow when folder is open
+           },
+         },
+       }, 
       },
-      sync_install = false,
-      highlight = { enable = true },
-      indent = { enable = true },
-    })
+      actions = {
+        open_file = {
+          window_picker = {
+            enable = false,
+          },
+        },
+      },
+   })
   end
 }
