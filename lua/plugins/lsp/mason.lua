@@ -31,7 +31,6 @@ return {
       ensure_installed = {
         "markdown_oxide",
         "lua_ls",
-        "clangd",
         "rust_analyzer"
       },
 
