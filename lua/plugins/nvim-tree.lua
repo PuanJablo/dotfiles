@@ -4,7 +4,7 @@ return {
     local nvimtree = require("nvim-tree")
     
     vim.g.loaded = 1
-    vimg.g.loaded_newtrwPlugin = 1
+    vim.g.loaded_newtrwPlugin = 1
 
     vim.cmd([[ highlight NvimTreeIndentMarker guifg=#EA2743 ]])
 
