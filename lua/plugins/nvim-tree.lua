@@ -17,14 +17,14 @@ return {
             arrow_open = "", -- arrow when folder is open
            },
          },
-       },
-       actions = {
+       }, 
+      },
+      actions = {
         open_file = {
           window_picker = {
             enable = false,
           },
         },
-       }
       },
    })
   end

@@ -26,7 +26,7 @@ opt.background = "dark"
 opt.signcolumn = "yes"
 
 -- backspace
-opt.background = "indent,eol,start"
+opt.backspace = "indent,eol,start"
 
 -- clipboard
 opt.clipboard:append("unnamedplus")

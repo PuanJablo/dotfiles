@@ -51,7 +51,7 @@ return {
       ["no"] = "O·P",
       ["nov"] = "O·P",
       ["noV"] = "O·P",
-      ["no\22"] = "O·P
+      ["no\22"] = "O·P,
       ["niI"] = "N·I",
       ["niR"] = "N·R",
       ["niV"] = "N",
