@@ -75,6 +75,11 @@ symbol = "行くラング"
 style = "fg:grey"
 format = '[ $symbol ($version) ]($style)'
 
+[lua]
+symbol = "ルア"
+style = "fg:grey"
+format = '[ $symbol ($version) ]($style)'
+
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
