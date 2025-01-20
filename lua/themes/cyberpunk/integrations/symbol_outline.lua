@@ -1,6 +1,6 @@
-local SymbolOutline = {
+local symbol_outline = {
     SymbolsOutlineConnector = { fg = C.off_white },
-    FocusedSymbol = { bg = C.off_white },
+    FocusedSymbol = { bg = C.off_black },
   }
   
-  return SymbolOutline
+  return symbol_outline
