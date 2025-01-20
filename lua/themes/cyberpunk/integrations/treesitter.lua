@@ -19,7 +19,7 @@ local treesitter = {
 	TSFloat = { fg = C.red },
 	TSNumber = { fg = C.red },
 	TSBoolean = { fg = C.red },
-	TSCharacter = { fg = C.dp },
+	TSCharacter = { fg = C.red },
 	TSError = { fg = C.red },
 	TSFunction = { fg = C.red },
 	TSFuncBuiltin = { fg = C.red },
