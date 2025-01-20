@@ -6,7 +6,7 @@ vim.o.background = "dark"
 vim.o.termguicolors = true
 vim.g.colors_name = "cyberpunk"
 
-local util = require("cyberpunk.util")
+local util = require("util")
 Config = require("cyberpunk.config")
 C = require("cyberpunk.palette")
 local highlights = require("cyberpunk.highlights")
