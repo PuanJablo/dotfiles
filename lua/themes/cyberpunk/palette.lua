@@ -18,3 +18,5 @@ local colors = {
   teal2 = "#58CBB3",
   cyan = "#29FFF4"
 }
+
+return colors
