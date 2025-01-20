@@ -19,7 +19,8 @@ require("lazy").setup({
   spec = {
     {"LazyVim/LazyVim"},
     {import = "plugins"},
-    {import = "plugins.lsp"}
+    {import = "plugins.lsp"},
+    {import = "themes.colorscheme"}
   },
   defaults = {
     lazy = false,
