@@ -2,7 +2,7 @@ local nvim_tree = {
 	NvimTreeFolderIcon = { fg = C.off_white },
 	NvimTreeIndentMarker = { fg = C.red },
 	NvimTreeNormal = { fg = C.off_white },
-	NvimTreeVertSplit = { fg = C.black, bg = C.black },
+	NvimTreeVertSplit = { fg = C.off_white, bg = C.off_black },
 	NvimTreeFolderName = { fg = C.off_white },
 	NvimTreeOpenedFolderName = { fg = C.off_white, style = "bold" },
 	NvimTreeEmptyFolderName = { fg = C.off_white, style = "italic" },
