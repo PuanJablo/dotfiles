@@ -1,0 +1,33 @@
+local cmp = {
+    CmpItemAbbrDeprecated = { fg = C.grey, style = "strikethrough" },
+    CmpItemAbbrMatch = { fg = C.dark_grey },
+    CmpItemAbbrMatchFuzzy = { fg = C.dark_grey },
+    CmpItemKindFunction = { fg = C.red },
+    CmpItemKindMethod = { fg = C.red },
+    CmpItemKindConstructor = { fg = C.red },
+    CmpItemKindClass = { fg = C.red },
+    CmpItemKindEnum = { fg = C.red },
+    CmpItemKindEvent = { fg = C.red },
+    CmpItemKindInterface = { fg = C.red },
+    CmpItemKindStruct = { fg = C.red },
+    CmpItemKindVariable = { fg = C.red },
+    CmpItemKindField = { fg = C.red },
+    CmpItemKindProperty = { fg = C.red },
+    CmpItemKindEnumMember = { fg = C.red },
+    CmpItemKindConstant = { fg = C.red },
+    CmpItemKindKeyword = { fg = C.grey },
+    CmpItemKindModule = { fg = C.grey },
+    CmpItemKindValue = { fg = C.grey },
+    CmpItemKindUnit = { fg = C.grey },
+    CmpItemKindText = { fg = C.grey },
+    CmpItemKindSnippet = { fg = C.grey },
+    CmpItemKindFile = { fg = C.grey },
+    CmpItemKindFolder = { fg = C.grey },
+    CmpItemKindColor = { fg = C.grey },
+    CmpItemKindReference = { fg = C.grey },
+    CmpItemKindOperator = { fg = C.grey },
+    CmpItemKindTypeParameter = { fg = C.grey },
+  }
+  
+  return cmp
+  

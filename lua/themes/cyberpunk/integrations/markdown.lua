@@ -1,0 +1,32 @@
+local markdown = {
+    markdownBlockquote = { fg = C.dark_grey },
+    markdownCode = { fg = C.gold },
+    markdownCodeBlock = { fg = C.gold },
+    markdownCodeDelimiter = { fg = C.gold },
+    markdownH1 = { fg = C.red },
+    markdownH2 = { fg = C.red},
+    markdownH3 = { fg = C.red },
+    markdownH4 = { fg = C.red },
+    markdownH5 = { fg = C.red },
+    markdownH6 = { fg = C.red },
+    markdownHeadingDelimiter = { fg = C.red },
+    markdownHeadingRule = { fg = C.off_white, style = "bold" },
+    markdownId = { fg = C.red },
+    markdownIdDeclaration = { fg = C.green },
+    markdownIdDelimiter = { fg = C.grey },
+    markdownLinkDelimiter = { fg = C.grey },
+    markdownBold = { fg = C.green, style = "bold" },
+    markdownItalic = { style = "italic" },
+    markdownBoldItalic = { fg = C.gold, style = "bold,italic" },
+    markdownListMarker = { fg = C.green },
+    markdownOrderedListMarker = { fg = C.green },
+    markdownRule = { fg = C.off_white },
+    markdownUrl = { fg = C.cyan, style = "underline" },
+    markdownLinkText = { fg = C.green },
+    markdownFootnote = { fg = C.gold },
+    markdownFootnoteDefinition = { fg = C.gold },
+    --markdownEscape = { fg = C.aurelion },
+  }
+  
+  return markdown
+  

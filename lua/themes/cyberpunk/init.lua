@@ -1,33 +1,56 @@
-local M = {}
-
-function M.get_palette(flavour)
-	local flvr = flavour or require("cyberpunk").flavour or vim.g.catppuccin_flavour or "mocha"
-	local _, palette = pcall(require, "cyberpunk.palette." .. flvr)
-	local O = require("cyberpunk").options
-	local ans = vim.tbl_deep_extend("keep", O.color_overrides.all or {}, O.color_overrides[flvr] or {}, palette or {})
-
-	--[[ 
-		Kitty makes Neovim transparent if its own terminal background matches Neovim, 
-		so we need to adjust the color channels to make sure people don't suddenly
-		have a transparent background if they haven't specified it.
-
-		Unfortunately, this currently means all users on Kitty will have all their
-		palette colors slightly offset.
-
-		ref: https://github.com/kovidgoyal/kitty/issues/2917
-	--]]
-	if O.kitty then
-		for accent, hex in pairs(ans) do
-			local red_green_string = hex:sub(1, 5)
-			local blue_value = tonumber(hex:sub(6, 7), 16)
-
-			-- Slightly increase or decrease brightness of the blue channel
-			blue_value = blue_value == 255 and blue_value - 1 or blue_value + 1
-			ans[accent] = string.format("%s%.2x", red_green_string, blue_value)
-		end
-	end
-
-	return ans
+vim.api.nvim_command("hi clear")
+if vim.fn.exists("syntax_on") then
+	vim.api.nvim_command("syntax reset")
 end
+vim.o.background = "dark"
+vim.o.termguicolors = true
+vim.g.colors_name = "cyberpunk"
 
-return M
+local util = require("cyberpunk.util")
+Config = require("cyberpunk.config")
+C = require("cyberpunk.palette")
+local highlights = require("cyberpunk.highlights")
+local treesitter = require("cyberpunk.integrations.treesitter")
+local markdown = require("cyberpunk.integrations.markdown")
+local which_key = require("cyberpunk.integrations.which_key")
+local git = require("cyberpunk.integrations.git")
+local lsp = require("cyberpunk.integrations.lsp")
+local quick_scope = require("cyberpunk.integrations.quickscope")
+local telescope = require("cyberpunk.integrations.telescope")
+local nvim_tree = require("cyberpunk.integrations.n_tree")
+local lir = require("cyberpunk.integrations.lir")
+local buffer = require("cyberpunk.integrations.buffer")
+local status_line = require("cyberpunk.integrations.status_line")
+local indent_blankline = require("cyberpunk.integrations.indent_blankline")
+local dashboard = require("cyberpunk.integrations.dashboard")
+local diff_view = require("cyberpunk.integrations.diff_view")
+local bqf = require("cyberpunk.integrations.bqf")
+local cmp = require("cyberpunk.integrations.cmp")
+local symbol_outline = require("cyberpunk.integrations.symbol_outline")
+local misc = require("cyberpunk.integrations.misc")
+
+local skeletons = {
+	highlights,
+	treesitter,
+	markdown,
+	which_key,
+	git,
+	lsp,
+	quick_scope,
+	telescope,
+	nvim_tree,
+	lir,
+	buffer,
+	status_line,
+	indent_blankline,
+	dashboard,
+	diff_view,
+	bqf,
+	cmp,
+	symbol_outline,
+	misc,
+}
+
+for _, skeleton in ipairs(skeletons) do
+	util.initialise(skeleton)
+end
