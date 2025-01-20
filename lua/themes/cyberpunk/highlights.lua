@@ -52,7 +52,7 @@ local highlights = {
 	NormalNC = { fg = C.off_white, bg = Config.transparent_background and "NONE" or C.off_black },
 	Number = { fg = C.green },
 	Operator = { fg = C.off_white },
-	Pmenu = { fg = C.off_white, bg = C.dark_grey },
+	Pmenu = { fg = C.off_white, bg = C.off_black },
 	PmenuSbar = { bg = C.off_black },
 	PmenuSel = { bg = C.cyan },
 	PmenuThumb = { bg = C.dark_grey },
@@ -92,7 +92,7 @@ local highlights = {
 	Visual = { bg = C.red },
 	VisualNOS = { bg = C.off_black },
 	WarningMsg = { fg = C.red, bg = C.off_black },
-	Whitespace = { fg = C.red },
+	Whitespace = { fg = C.off_black },
 	WildMenu = { fg = C.off_white, bg = C.dark_grey },
 }
 return highlights
