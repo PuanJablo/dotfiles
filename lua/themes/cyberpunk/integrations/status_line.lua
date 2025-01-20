@@ -5,7 +5,6 @@ local status_line = {
     StatusLineTerm = { fg = C.black },
     StatusLineTermNC = { fg = C.black },
   }
-  
+
   return status_line
-  
-  
+

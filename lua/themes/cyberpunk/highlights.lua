@@ -89,7 +89,7 @@ local highlights = {
 	Underlined = { style = "underline" },
 	Variable = { fg = C.red },
 	VertSplit = { fg = C.red, bg = C.off_black },
-	Visual = { bg = C.red },
+	Visual = { bg = C.dark_grey },
 	VisualNOS = { bg = C.off_black },
 	WarningMsg = { fg = C.red, bg = C.off_black },
 	Whitespace = { fg = C.off_black },

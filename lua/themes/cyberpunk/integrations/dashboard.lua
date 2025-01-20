@@ -3,6 +3,6 @@ local dashboard = {
     DashboardCenter = { fg = C.red },
     DashboardFooter = { fg = C.dark_grey },
   }
-  
-  return dashboard
-  
+
+return dashboard
+

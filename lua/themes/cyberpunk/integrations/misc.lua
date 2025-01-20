@@ -59,7 +59,6 @@ local misc = {
     jsonKeyword = { fg = C.red },
     yamlBlockMappingKey = { fg = C.red },
   }
-  
+
   return misc
-  
-  
+
