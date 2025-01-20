@@ -57,7 +57,7 @@ local misc = {
     cssStyle = { fg = C.red },
     cssImportant = { fg = C.red },
     jsonKeyword = { fg = C.red },
-    yamlBlockMappingKey = { fg = C.reds },
+    yamlBlockMappingKey = { fg = C.red },
   }
   
   return misc
