@@ -2,7 +2,7 @@ local buffer = {
     BufferCurrent = { fg = C.off_white, bg = C.off_black },
     BufferCurrentIndex = { fg = C.off_white, bg = C.off_black },
     BufferCurrentMod = { fg = C.gold, bg = C.off_black },
-    BufferCurrentSign = { fg = C.cyan, bg = C.off_black},
+    BufferCurrentSign = { fg = C.off_black, bg = C.red },
     BufferCurrentTarget = { fg = C.red, bg = C.off_black, style = "bold" },
     BufferVisible = { fg = C.grey, bg = C.off_black },
     BufferVisibleIndex = { fg = C.grey, bg = C.off_black },
@@ -15,6 +15,6 @@ local buffer = {
     BufferInactiveSign = { fg = C.dark_grey, bg = C.off_black },
     BufferInactiveTarget = { fg = C.grey, bg = C.off_black, style = "bold" },
   }
-  
+
   return buffer
-  
+

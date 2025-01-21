@@ -5,6 +5,6 @@ local which_key = {
     WhichKeyDesc = { fg = C.off_white },
     WhichKeyFloat = { bg = C.off_black },
   }
-  
+
   return which_key
-  
+

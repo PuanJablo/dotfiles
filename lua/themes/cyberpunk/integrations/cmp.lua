@@ -28,6 +28,6 @@ local cmp = {
     CmpItemKindOperator = { fg = C.grey },
     CmpItemKindTypeParameter = { fg = C.grey },
   }
-  
+
   return cmp
-  
+

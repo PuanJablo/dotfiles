@@ -5,6 +5,6 @@ local indent_blankline = {
     IndentBlanklineSpaceChar = { fg = C.green },
     -- IndentBlanklineSpaceCharBlankline = { fg = C.aurelion },
   }
-  
+
   return indent_blankline
-  
+
